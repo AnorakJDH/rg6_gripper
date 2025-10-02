@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <robot name="rg6" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<xacro:include filename="$(find rg6_gripper_description)/urdf/materials.xacro" />
-<xacro:include filename="$(find rg6_gripper_description)/urdf/rg6_gripper.trans" />
-<xacro:include filename="$(find rg6_gripper_description)/urdf/rg6_gripper.gazebo" />
+<xacro:include filename="$(find rg6_gripper)/urdf/materials.xacro" />
+<xacro:include filename="$(find rg6_gripper)/urdf/rg6_gripper.trans" />
+<xacro:include filename="$(find rg6_gripper)/urdf/rg6_gripper.gazebo" />
 <link name="base_link">
   <inertial>
     <origin xyz="-0.00030179080386336256 -0.00047670368310389217 0.020678912231015475" rpy="0 0 0"/>
@@ -13,14 +13,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://rg6_gripper_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://rg6_gripper/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://rg6_gripper_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://rg6_gripper/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -34,14 +34,14 @@
   <visual>
     <origin xyz="0.031849 -1e-06 -0.04953" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://rg6_gripper_description/meshes/g_main.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://rg6_gripper/meshes/g_main.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.031849 -1e-06 -0.04953" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://rg6_gripper_description/meshes/g_main.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://rg6_gripper/meshes/g_main.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -55,14 +55,14 @@
   <visual>
     <origin xyz="-0.023851 -0.012801 -0.13453" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://rg6_gripper_description/meshes/l_out.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://rg6_gripper/meshes/l_out.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.023851 -0.012801 -0.13453" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://rg6_gripper_description/meshes/l_out.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://rg6_gripper/meshes/l_out.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -76,14 +76,14 @@
   <visual>
     <origin xyz="0.023749 -0.012801 -0.13453" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://rg6_gripper_description/meshes/r_out.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://rg6_gripper/meshes/r_out.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.023749 -0.012801 -0.13453" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://rg6_gripper_description/meshes/r_out.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://rg6_gripper/meshes/r_out.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -97,14 +97,14 @@
   <visual>
     <origin xyz="-0.071235 0.012499 -0.19895" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://rg6_gripper_description/meshes/l_tip.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://rg6_gripper/meshes/l_tip.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.071235 0.012499 -0.19895" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://rg6_gripper_description/meshes/l_tip.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://rg6_gripper/meshes/l_tip.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -118,14 +118,14 @@
   <visual>
     <origin xyz="0.071133 0.012499 -0.199024" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://rg6_gripper_description/meshes/r_tip.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://rg6_gripper/meshes/r_tip.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.071133 0.012499 -0.199024" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://rg6_gripper_description/meshes/r_tip.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://rg6_gripper/meshes/r_tip.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -139,14 +139,14 @@
   <visual>
     <origin xyz="-0.010551 -0.000101 -0.15763" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://rg6_gripper_description/meshes/l_inner.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://rg6_gripper/meshes/l_inner.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.010551 -0.000101 -0.15763" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://rg6_gripper_description/meshes/l_inner.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://rg6_gripper/meshes/l_inner.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -160,14 +160,14 @@
   <visual>
     <origin xyz="0.010449 -0.000101 -0.15763" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://rg6_gripper_description/meshes/r_inner.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://rg6_gripper/meshes/r_inner.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.010449 -0.000101 -0.15763" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://rg6_gripper_description/meshes/r_inner.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://rg6_gripper/meshes/r_inner.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
